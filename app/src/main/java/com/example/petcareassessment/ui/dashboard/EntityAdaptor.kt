@@ -1,12 +1,13 @@
 package com.example.petcareassessment.ui.dashboard
 
+import android.content.Entity
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.petcareassessment.data.model.Entity
 import com.example.petcareassessment.databinding.ItemEntityBinding
 
-class EntityAdapter(private diagnosis val onClick: (Entity) -> Unit) :
+class EntityAdapter(private val onClick: (Entity) -> Unit) :
     RecyclerView.Adapter<EntityAdapter.EntityViewHolder>() {
 
     private val entities = mutableListOf<Entity>()

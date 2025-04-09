@@ -2,6 +2,8 @@ package com.example.petcareassessment.ui.dashboard
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -20,6 +22,10 @@ class DashboardActivity : AppCompatActivity() {
         binding = ActivityDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Set up the Toolbar
+        setSupportActionBar(binding.toolbar)
+
+        // Get keypass from intent
         val keypass = intent.getStringExtra("KEYPASS") ?: return
         setupRecyclerView()
         setupObservers()
@@ -40,12 +46,18 @@ class DashboardActivity : AppCompatActivity() {
 
     private fun setupObservers() {
         viewModel.dashboardResult.observe(this) { result ->
+            binding.loadingProgress.visibility = View.VISIBLE // Show loading
             when (result) {
-                is Result.Success -> adapter.submitList(result.data.entities)
+                is Result.Success -> {
+                    adapter.submitList(newEntities = result.data.entities)
+                    binding.loadingProgress.visibility = View.GONE // Hide loading on success
+                }
                 is Result.Failure -> {
-                    Toast.makeText(this, result.exception.message, Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Error: ${result.exception.message}", Toast.LENGTH_LONG).show()
+                    binding.loadingProgress.visibility = View.GONE // Hide loading on failure
                 }
             }
         }
     }
+}
 }

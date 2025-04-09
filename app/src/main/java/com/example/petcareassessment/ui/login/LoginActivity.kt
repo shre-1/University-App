@@ -25,6 +25,8 @@ class LoginActivity : AppCompatActivity() {
 
     private fun setupObservers() {
         viewModel.loginResult.observe(this) { result ->
+            binding.loadingProgress.visibility = View.VISIBLE
+            binding.loginButton.isEnabled = false
             when (result) {
                 is Result.Success -> {
                     startActivity(Intent(this, DashboardActivity::class.java).apply {
@@ -33,9 +35,13 @@ class LoginActivity : AppCompatActivity() {
                     finish()
                 }
                 is Result.Failure -> {
-                    Toast.makeText(this, result.exception.message, Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Error: ${result.exception.message}", Toast.LENGTH_LONG).show()
                 }
             }
+            binding.loadingProgress.visibility = View.GONE
+            binding.loginButton.isEnabled = true
+        }
+    }
         }
     }
 
