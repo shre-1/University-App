@@ -13,16 +13,26 @@ The primary goals of PetCareAssessment2 are:
 
 Simplify Pet Management: 
 Provide an all-in-one platform to track and manage pet care tasks efficiently.
+
 Enhance Pet Well-being: Offer reminders and insights to ensure pets receive timely care and attention.
+
 User-Friendly Design: Create an intuitive interface accessible to users of all technical backgrounds.
+
 Community-Driven Development: Encourage contributions from developers and pet enthusiasts to improve the application.
+
 Scalability: Build a foundation that supports future features like integration with smart pet devices or veterinary APIs.
+
 Features
 Pet Profiles: Create and manage detailed profiles for each pet, including age, breed, and medical history.
+
 Task Scheduler: Set up reminders for feeding, grooming, and vet visits.
+
 Health Tracker: Log vaccinations, medications, and symptoms for easy reference.
+
 Reports: Generate summaries of pet care activities over time.
+
 Cross-Platform Support: Designed to work seamlessly on desktop and mobile devices (future implementation).
+
 Prerequisites
 Before you begin, ensure you have the following installed on your system:
 
