@@ -1,7 +1,0 @@
-steps:
-  - name: Run tests
-    run: pytest  # Replace with your test command
-    if: ${{ success() }}  # Only run if previous steps succeeded
-  - name: Fail if tests didn't pass
-    if: ${{ failure() }}  # Trigger if tests fail
-    run: exit 1           # Cross-platform failure :cite[6]
