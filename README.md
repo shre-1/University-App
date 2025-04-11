@@ -1,141 +1,102 @@
-PetCare App Creation  for Assessment 2
+University-App
 
-Welcome to PetCareAssessment2!
-comprehensive application designed to assist pet owners in managing their pets' health, wellness, and daily care routines. This project aims to provide an intuitive and user-friendly solution for tracking pet-related activities, ensuring their well-being, and offering valuable insights for pet care enthusiasts.
+Welcome to **UniversityApp**, an Android application designed to streamline university-related tasks and enhance the student experience. This project, developed using Android Studio, serves as a practical tool for managing schedules, assignments, and resources for university students.
 
-Project Introduction
-PetCareAssessment2 is an open-source project developed to streamline pet care management. Whether you're a busy pet owner, a veterinary professional, or simply a pet lover, this application offers tools to monitor feeding schedules, veterinary appointments, exercise routines, and more. Built with modern technologies, it ensures scalability, reliability, and ease of use.
+ Repository Link
+- Git Repository: [https://github.com/shre-1/PetCareAssessment2.git](https://github.com/shre-1/PetCareAssessment2.git)
+  
+  Project was initially created as "PetCareAssessment2" with a focus on pet management but has been repurposed into "University App" to address university-specific needs. The tasks undertaken include:
+- **App Renaming:** Modified the app name from "PetCare" to "University App" by updating `strings.xml` and ensuring consistency in the manifest.
+- **Git Management:** Resolved merge conflicts, handled swap files, and successfully synced the local repository with the remote GitHub repo.
+- **Build Troubleshooting:** Aimed to identify and fix a build failure (ongoing effort as of April 10, 2025).
+- **Documentation:** Created this detailed README to outline the project’s purpose, setup, and usage.
 
-This repository contains the source code, documentation, and resources needed to set up and contribute to the project. It is designed to be extensible, allowing developers to customize and enhance its functionality based on their needs.
+The core development involved adapting an Android project structure, ensuring proper version control, and preparing it for further feature implementation.
 
-Objectives
-The primary goals of PetCareAssessment2 are:
+## Objective
+The primary objective of **University App** is to provide a user-friendly mobile solution for university students. Key goals include:
+- Simplifying task management by offering a centralized platform for tracking assignments, exams, and class schedules.
+- Enhancing accessibility to university resources like lecture notes or campus maps.
+- Serving as a learning exercise in Android development, Git workflows, and project documentation.
+- Eventually evolving into a fully functional app with features tailored to student feedback and needs.
 
-Simplify Pet Management: 
-Provide an all-in-one platform to track and manage pet care tasks efficiently.
+This project demonstrates practical skills in mobile app development while addressing real-world challenges faced by students.
 
-Enhance Pet Well-being: Offer reminders and insights to ensure pets receive timely care and attention.
+## How to Build and Run the Application
 
-User-Friendly Design: Create an intuitive interface accessible to users of all technical backgrounds.
+### Prerequisites
+Before setting up the project, ensure you have the following installed:
+- **Android Studio**: Version 4.0 or later (e.g., Android Studio Flamingo | 2022.2.1 or newer recommended).
+- **Java Development Kit (JDK)**: JDK 11 or higher.
+- **Git**: For cloning the repository.
+- **Android SDK**: Compatible with API level 21 (Android 5.0 Lollipop) or higher.
+- An Android emulator or physical device running Android 5.0+.
 
-Community-Driven Development: Encourage contributions from developers and pet enthusiasts to improve the application.
-
-Scalability: Build a foundation that supports future features like integration with smart pet devices or veterinary APIs.
-
-Features
-Pet Profiles: Create and manage detailed profiles for each pet, including age, breed, and medical history.
-
-Task Scheduler: Set up reminders for feeding, grooming, and vet visits.
-
-Health Tracker: Log vaccinations, medications, and symptoms for easy reference.
-
-Reports: Generate summaries of pet care activities over time.
-
-Cross-Platform Support: Designed to work seamlessly on desktop and mobile devices (future implementation).
-
-Prerequisites
-Before you begin, ensure you have the following installed on your system:
-
-Git:
-Version control system to clone the repository (download from git-scm.com).
-Node.js:Version 16.x or higher (download from nodejs.org).
-npm: Package manager included with Node.js.
-Python: Version 3.8+ (optional, for certain backend features; download from python.org).
-A modern web browser (e.g., Chrome, Firefox) for testing the application.
-Installation
-Follow these steps to set up the project locally:
+### Dependencies
+The project relies on standard Android libraries and possibly additional ones depending on its features. Common dependencies (to be confirmed once the build is analyzed) may include:
+- **AndroidX Libraries**: For modern Android component support.
+  ```gradle
+  implementation 'androidx.appcompat:appcompat:1.6.1'
+  implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+  Material Components: For UI design.
+gradle
+implementation 'com.google.android.material:material:1.9.0'
+Check app/build.gradle for the full list once the project is accessible.
+Setup Instructions
+Follow these steps to set up and run the application locally:
 
 Clone the Repository:
+Open a terminal or PowerShell and run:
+bash
+
+
 git clone https://github.com/shre-1/PetCareAssessment2.git
 cd PetCareAssessment2
+This downloads the project to your local machine.
+Open in Android Studio:
+Launch Android Studio.
+Select "Open an existing project" and navigate to the cloned PetCareAssessment2 folder.
+Click "Open" to load the project.
 
-Install Dependencies:
-For the frontend (if applicable):
-npm install
+Sync Gradle:
+Once the project loads, click "Sync Project with Gradle Files" (an icon with two arrows in a circle) in the toolbar.
+Android Studio will download necessary dependencies listed in build.gradle.
 
-For the backend (if applicable, e.g., Python-based):
-pip install -r requirements.txt
+Configure an Emulator or Device:
+Emulator: In Android Studio, go to Tools > Device Manager, create a virtual device (e.g., Pixel 6 with API 33), and start it.
+Physical Device: Enable Developer Options and USB Debugging on your Android phone, then connect it via USB.
 
-Configure Environment Variables:
-Create a .env file in the root directory.
+Build the Project:
+Click Build > Make Project or press Ctrl+F9.
+Resolve any build errors (if present) by checking the "Build" output window. (Note: Build failure is under investigation.)
 
-Add necessary variables (e.g., database credentials, API keys). Example:
-DATABASE_URL=your_database_url
-API_KEY=your_api_key
+Run the Application:
+Click the green "Run" button (triangle) or press Shift+F10.
+Select your emulator or connected device to deploy the app.
+The app should launch, displaying "University App" on the launcher screen.
 
-Verify Setup:
-Run a quick test to ensure dependencies are installed:
-npm test
+Troubleshooting
+Gradle Sync Fails: Ensure your internet connection is active and the Android SDK is updated via SDK Manager.
 
-Building and Running the Application
-Frontend
-Navigate to the frontend directory (if separated):
-cd frontend
+Build Errors: Check for missing dependencies or syntax errors in build.gradle or Java/Kotlin files.
 
-Build the application:
-npm run build
+App Crashes: Review Logcat in Android Studio for stack traces.
 
-Start the development server:
-npm start
+Project Details
 
-Open your browser and visit http://localhost:3000 to view the app.
-Backend (Optional)
-Navigate to the backend directory (if applicable):
-cd backend
+Language: Java or Kotlin (to be confirmed based on source files).
 
-Start the server:
-python server.py
-The backend will run on http://localhost:5000 by default.
+Structure: Follows standard Android architecture with activities, layouts, and resources.
 
-Full Application
-If the project is a monorepo, use:
-npm run dev
+Status: As of April 10, 2025, the project is in development with a pending build fix.
 
-This command starts both frontend and backend concurrently (adjust based on actual setup).
-Dependencies
+This app is a work in progress, initially scoped for pet care but pivoted to serve university students. Future enhancements could include push notifications for deadlines, a calendar integration, or a student forum.
 
-Frontend
-React: ^18.2.0 - JavaScript library for building user interfaces.
-Axios: ^1.6.0 - Promise-based HTTP client for API requests.
-Bootstrap: ^5.3.0 - CSS framework for responsive design.
-Backend (if applicable)
-Flask: ^2.3.0 - Python web framework for lightweight server implementation.
-SQLAlchemy: ^2.0.0 - ORM for database management.
-Development Tools
-ESLint: ^8.0.0 - Linting tool for identifying code issues.
-Prettier: ^3.0.0 - Code formatter for consistent style.
-Run npm install or pip install -r requirements.txt to install all dependencies automatically.
+Conclusion
+UniversityAppAssessment2 represents a practical exploration into Android app development, version control with Git, and project management. While it began as "PetCareAssessment2," the shift to "University App" aligns it with a broader, more relatable use case for students. The process of renaming, syncing with GitHub, and documenting the project has been a valuable learning experience, highlighting the importance of adaptability and clear communication in software development.
 
-Contributing
-We welcome contributions from the community! To get started:
+Once the build issue is resolved, this app has the potential to evolve into a robust tool for university life. Contributions or feedback are welcome—feel free to fork the repo, submit pull requests, or raise issues on GitHub. The journey from a basic concept to a functional app underscores the iterative nature of coding and the power of open-source collaboration.
 
-Fork the repository.
-Create a new branch:
-git checkout -b feature/your-feature-name
+For any questions or support, reach out via GitHub issues or directly explore the code at https://github.com/shre-1/PetCareAssessment2.
 
-Commit your changes:
-git commit -m "Add your message here"
-
-Push to your fork:
-git push origin feature/your-feature-name
-
-Open a pull request with a detailed description of your changes.
-Please follow our  and review the  for more details.
-
-License
-This project is licensed under the MIT License. See the  file for more information.
-
-Contact
-For questions, suggestions, or support, reach out to the project maintainer:
-
-GitHub: shre-1
-Email: Shreyaship111@gmail.com
-
-Thank you for your interest in PetCareAssessment2! 
-Together, let’s make pet care smarter and simpler.
-
-
-
-
-
-
+Happy coding, and here’s to making university life a little easier!
