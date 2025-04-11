@@ -5,13 +5,13 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="com.example.UniversityApp.UniversityApplication"
         android:allowBackup="true"
+        android:name=".UniversityApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PetCareAssessment">
+        android:theme="@style/Theme.PetCareAssessment"
+        tools:ignore="MissingClass">
 
         <activity
             android:name="com.example.UniversityApp.ui.details.DetailsActivity"

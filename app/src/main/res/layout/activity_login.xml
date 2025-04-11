@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/Don't have an account? Sign up"
+    android:id="@+id/dont_have_account_sign_up"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#98FF5722"
