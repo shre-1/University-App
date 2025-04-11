@@ -35,11 +35,9 @@ Before setting up the project, ensure you have the following installed:
 ### Dependencies
 The project relies on standard Android libraries and possibly additional ones depending on its features. Common dependencies (to be confirmed once the build is analyzed) may include:
 - **AndroidX Libraries**: For modern Android component support.
-  ```gradle
-  implementation 'androidx.appcompat:appcompat:1.6.1'
-  implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-  Material Components: For UI design.
-gradle
+  `gradle
+  
+  Materials components: for UI design
 implementation 'com.google.android.material:material:1.9.0'
 Check app/build.gradle for the full list once the project is accessible.
 Setup Instructions
