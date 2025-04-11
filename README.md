@@ -3,7 +3,7 @@ University-App
 Welcome to **UniversityApp**, an Android application designed to streamline university-related tasks and enhance the student experience. This project, developed using Android Studio, serves as a practical tool for managing schedules, assignments, and resources for university students.
 
  Repository Link
-- Git Repository: [https://github.com/shre-1/PetCareAssessment2.git](https://github.com/shre-1/PetCareAssessment2.git)
+- Git Repository: [https://github.com/shre-1/University-App](https://github.com/shre-1/University-App.git)
   
   Project was initially created as "PetCareAssessment2" with a focus on pet management but has been repurposed into "University App" to address university-specific needs. The tasks undertaken include:
 - **App Renaming:** Modified the app name from "PetCare" to "University App" by updating `strings.xml` and ensuring consistency in the manifest.
@@ -95,8 +95,43 @@ This app is a work in progress, initially scoped for pet care but pivoted to ser
 Conclusion
 UniversityAppAssessment2 represents a practical exploration into Android app development, version control with Git, and project management. While it began as "PetCareAssessment2," the shift to "University App" aligns it with a broader, more relatable use case for students. The process of renaming, syncing with GitHub, and documenting the project has been a valuable learning experience, highlighting the importance of adaptability and clear communication in software development.
 
-Once the build issue is resolved, this app has the potential to evolve into a robust tool for university life. Contributions or feedback are welcome—feel free to fork the repo, submit pull requests, or raise issues on GitHub. The journey from a basic concept to a functional app underscores the iterative nature of coding and the power of open-source collaboration.
+Once the build issue is resolved, this app has the potential to evolve into a robust tool for university life. Contributions or feedback are welcome—feel free to fork the repo, submit pull requests, or raise issues on GitHub. The journey from a basic concept to a functional app underscores the iterative nature of coding and the power of open-source collaboration. 
 
-For any questions or support, reach out via GitHub issues or directly explore the code at https://github.com/shre-1/PetCareAssessment2.
+ABOUT THE PROJECT (QUICK OVERVIEW)
+
+📱 Features
+
+- 🔐 User Authentication (Login/Signup)
+- 📋 Dashboard with user-specific data
+- 🗓️ View class schedules and announcements
+- 📊 Manage courses and attendance
+- 🌐 API Integration for real-time data
+- 🧩 Clean Architecture with Dependency Injection (Hilt)
+- 🧪 Unit testing included
+- 🛠️ MVVM Architecture
+
+🛡️ Requirements
+Android Studio Giraffe or higher
+
+Kotlin 1.8+
+
+Gradle 8.0+
+
+Minimum SDK 21+
+
+🤝 Contributing
+Contributions are welcome!
+If you find any issues or want to improve the project, feel free to open a pull request.
+
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+🙌 Acknowledgements
+Thanks to open-source libraries and contributors!
+
+Special mention: VU-NIT3213 API for backend integration.
+
+
+For any questions or support, reach out via GitHub issues or directly explore the code at https://github.com/shre-1/University-App
 
 Happy coding, and here’s to making university life a little easier!
