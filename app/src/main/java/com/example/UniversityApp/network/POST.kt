@@ -1,3 +1,3 @@
 package com.example.UniversityApp.network
 
-annotation class POST
+annotation class POST(val string: String)

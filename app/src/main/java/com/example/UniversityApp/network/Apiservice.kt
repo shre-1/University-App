@@ -1,12 +1,12 @@
 package com.example.UniversityApp.network
 
-mport com.example.petcareassessment.model.LoginRequest
-import com.example.petcareassessment.model.LoginResponse
-import retrofit2.Response
-import retrofit2.http.Body
-import retrofit2.http.POST
+import Model.LoginRequest
+import Model.LoginResponse
+import com.google.android.gms.common.api.Response
 
 interface ApiService {
-    @POST("v1/account/login") // Update this if your endpoint differs
-    suspend fun login(@Body request: LoginRequest): Response<LoginResponse>
+    @POST("v1/account/login")
+    suspend fun login(@Body request: LoginRequest)
 }
+
+annotation class Body

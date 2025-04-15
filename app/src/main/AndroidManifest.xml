@@ -6,12 +6,11 @@
 
     <application
         android:allowBackup="true"
-        android:name=".UniversityApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PetCareAssessment"
         tools:ignore="MissingClass">
+
 
         <activity
             android:name="com.example.UniversityApp.ui.details.DetailsActivity"

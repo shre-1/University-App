@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3400BCD4"
-    tools:context=".ui.layout.activitydashboard">
+    tools:context=".ui.layout.activitydashboard"
+    tools:ignore="MissingClass">
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search_courses"
@@ -83,5 +84,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="362dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="209dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

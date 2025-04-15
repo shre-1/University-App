@@ -60,12 +60,6 @@
         android:textSize="16sp"
         android:visibility="gone" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="399dp"
-        android:layout_height="366dp"
-        app:srcCompat="@drawable/app" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="207dp"
@@ -76,4 +70,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#1E3CE9"
         android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="513dp"
+        android:layout_height="354dp"
+        android:src="@drawable/app" />
 </LinearLayout>
