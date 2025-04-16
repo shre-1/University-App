@@ -1,6 +1,6 @@
 import com.example.UniversityApp.data.model.AuthResponse
-import com.example.UniversityApp.data.remote.ApiService
-import com.example.UniversityApp.data.repository.AuthRepository
+import com.example.UniversityApp.di.data.remote.ApiService
+import com.example.UniversityApp.di.data.repository.AuthRepository
 import io.mockk.coEvery
 import org.junit.Test
 import retrofit2.Response

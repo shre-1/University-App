@@ -1,8 +1,8 @@
-package com.example.UniversityApp.data.repository
+package com.example.UniversityApp.di.data.repository
 
 import com.example.UniversityApp.data.model.AuthResponse
 import com.example.UniversityApp.data.model.DashboardResponse
-import com.example.UniversityApp.data.remote.ApiService
+import com.example.UniversityApp.di.data.remote.ApiService
 import javax.inject.Inject
 
 class AuthRepository @Inject constructor(

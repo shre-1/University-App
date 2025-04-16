@@ -1,4 +1,4 @@
-package com.example.UniversityApp.data.remote
+package com.example.UniversityApp.di.data.remote
 
 import com.example.UniversityApp.data.model.AuthResponse
 import com.example.UniversityApp.data.model.DashboardResponse
