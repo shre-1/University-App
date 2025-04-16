@@ -48,8 +48,8 @@ Open a terminal or PowerShell and run:
 bash
 
 
-git clone https://github.com/shre-1/PetCareAssessment2.git
-cd PetCareAssessment2
+git clone https://github.com/shre-1/UniversityApp.git
+cd UniversityApp
 This downloads the project to your local machine.
 Open in Android Studio:
 Launch Android Studio.
@@ -91,7 +91,7 @@ Status: As of April 10, 2025, the project is in development with a pending build
 This app is a work in progress, initially scoped for pet care but pivoted to serve university students. Future enhancements could include push notifications for deadlines, a calendar integration, or a student forum.
 
 Conclusion
-UniversityAppAssessment2 represents a practical exploration into Android app development, version control with Git, and project management. While it began as "PetCareAssessment2," the shift to "University App" aligns it with a broader, more relatable use case for students. The process of renaming, syncing with GitHub, and documenting the project has been a valuable learning experience, highlighting the importance of adaptability and clear communication in software development.
+UniversityApp (Assessment2) represents a practical exploration into Android app development, version control with Git, and project management. While it began as "PetCareAssessment2," the shift to "University App" aligns it with a broader, more relatable use case for students. The process of renaming, syncing with GitHub, and documenting the project has been a valuable learning experience, highlighting the importance of adaptability and clear communication in software development.
 
 Once the build issue is resolved, this app has the potential to evolve into a robust tool for university life. Contributions or feedback are welcome—feel free to fork the repo, submit pull requests, or raise issues on GitHub. The journey from a basic concept to a functional app underscores the iterative nature of coding and the power of open-source collaboration. 
 
@@ -115,7 +115,7 @@ Kotlin 1.8+
 
 Gradle 8.0+
 
-Minimum SDK 21+
+Minimum SDK 29
 
 🤝 Contributing
 Contributions are welcome!
